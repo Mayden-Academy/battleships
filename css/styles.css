@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+
+#game {
+    width: 1250px;
+    height: calc(100vh - 20px);
+    border: 1px solid black;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+#game #team_1 {
+    margin-right: 48px;
+}
+
+#game .grid {
+    float: left;
+    width: 600px;
+    height: 100%;
+    overflow: auto;
+}
+
+#game .grid .x {
+    height: 50px;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+#game .grid .x .x-option {
+    float: left;
+    width: 12.5%;
+    text-align: center;
+}
+
+
+#game .grid .y {
+    width: 50px;
+    float: left;
+}
+
+#game .grid .y .y-option {
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.sea {
+    width: calc(100% - 50px);
+    float: left;
+    border: 1px solid black;
+}
+
+.sea .row {
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+
+.sea .row:last-child {
+    border: none;
+}
+
+.sea .square {
+    float: left;
+    border-right: 1px solid black;
+    height: 48px;
+    width: 12.5%;
+}
+
+.sea .square:last-child {
+    border: none;
+}
+
+.sea .square.ship.hit {
+    background: green;
+}
+
+.sea .square.ship.hit.sunk {
+    background: url('https://static.thenounproject.com/png/55756-200.png') center center no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+
+.sea .square.miss {
+    background: orange;
+}
