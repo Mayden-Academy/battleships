@@ -9,19 +9,17 @@ body {
 }
 
 #game {
-    width: 1250px;
-    height: calc(100vh - 20px);
-    border: 1px solid black;
-    margin: 10px auto;
     overflow: auto;
 }
 
-#game #team_1 {
-    margin-right: 48px;
+#game img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
 }
 
 #game .grid {
-    float: left;
+    margin: 0 auto;
     width: 600px;
     height: 100%;
     overflow: auto;

@@ -9,7 +9,8 @@
 <body>
 
 <div id="game">
-    <div id="team_1" class="grid">
+    <img src="https://www.cs.le.ac.uk/people/gc51/battleships/Logo.gif">
+    <div class="grid">
         <div class="x">
             <div class="x-option">1</div>
             <div class="x-option">2</div>
@@ -116,7 +117,6 @@
         </div>
 
     </div>
-    <div id="team_2" class="grid"></div>
 </div>
 
 </body>
